@@ -3,22 +3,28 @@ import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  lastname: string;
+  id: number;
+  rol: string;
+  status: string;
+  telephon: number;
+  email: string;
+  action: string;
+
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  { name: 'Andrés Felipe', lastname: 'Garcia Castro' , id: 114485404, rol: 'Administrador', status: 'Activo', telephon: 3165303978, email: 'afgarcia@refinal.com', action: ''},
+  { name: 'Elizabeth', lastname: 'Arboleda' , id: 665789080, rol: 'Administrador', status: 'Inactivo', telephon: 3165303978,  email: 'earboleda@refinal.com', 
+  action: ''},
+  { name: 'Jader', lastname: 'Penagos', id: 665789043, rol: 'Conductor', status: 'Activo', telephon: 3175303978, email: 'jpenagos@refinal.com', action: ''},
+  { name: 'Diana', lastname: 'Villa' , id: 1122567890, rol: 'Recolector', status: 'Activo', telephon: 3005303976, email: 'dvilla@refinal.com', action: ''},
+  { name: 'Luis Andrés', lastname: 'Murillo', id: 1144198789, rol: 'Administrador', status: 'Activo', telephon: 3115134078, email: 'lamurillo@refinal.com',
+   action: ''},
+  { name: 'Jairo', lastname: 'Gutierrez', id: 44789056, rol: 'Coordinador', status: 'Activo', telephon: 3125333977, email: 'jgutierrez@refinal.com', action: ''},
+  { name: 'Alexandra', lastname: 'Culcha', id: 1144198786, rol: 'Digitador CG-UNO', status: 'Inactivo', telephon: 3145439560, email: 'culcha@refinal.com',
+   action: ''},
+  { name: 'Valentina', lastname: 'Zapata', id: 72567788, rol: 'Recolector', status: 'Activo', telephon: 3157893970, email: '', action: 'vzapata@refinal.com'}
 ];
 
 @Component({
@@ -29,7 +35,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 export class RolesComponent  {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['name', 'lastname', 'id', 'rol', 'status', 'telephon', 'email', 'action'];
   dataSource = ELEMENT_DATA;
 
 }
