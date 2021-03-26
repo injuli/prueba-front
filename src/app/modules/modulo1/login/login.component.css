@@ -80,6 +80,10 @@ a {
     margin-top: 100px;
 }
 
+.color {
+    color: white;
+}
+
 .wrapper {
     background-color: white;
     color: white;

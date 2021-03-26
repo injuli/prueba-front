@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'modulo2',
     loadChildren: () => import ('../app/modules/modulo2/modulo2.module').then(m => m.Modulo2Module)
   },
-  {path: '', redirectTo: 'modulo1', pathMatch: 'full'}
+  {path: '**', redirectTo: 'modulo1'}
 
 
 ];
