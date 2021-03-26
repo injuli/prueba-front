@@ -2,7 +2,7 @@
     <div class="container-fluid ">
         <div class="login row">
             <div class="col-md-9">
-                <div class="card">
+                <div class="animate__fadeIn card">
                     <div class="card-header card-header-primary card-header-icon">
                         <div class="card-icon">
                             <i class="material-icons">people_alt</i>
@@ -106,42 +106,44 @@
                     </div>
                     <div class="card-body">
 
-                        <form class="example-form">
-                            <mat-form-field class="example-full-width">
-                                <mat-label>Favorite food</mat-label>
-                                <input matInput placeholder="Ex. Pizza" value="Sushi">
-                            </mat-form-field>
-
-                            <mat-form-field class="example-full-width">
-                                <mat-label>Leave a comment</mat-label>
-                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-                            </mat-form-field>
-                        </form>
-                        <mat-form-field>
-                            <mat-label>Filter</mat-label>
-                            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-                        </mat-form-field>
-                        <div class="row">
-
-                            <div class="col-md-12">
-
-
-                            </div>
-                            <div class="col-md-12">
-
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mat-form-field-flex">
-                                    <!---->
-                                    <!---->
-                                    <div class="mat-form-field-infix"><input _ngcontent-c6="" class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored" matinput="" id="mat-input-0" placeholder="Título" aria-invalid="false" aria-required="false">
-                                        <span class="mat-form-field-label-wrapper">
-                                            <!----><label class="mat-form-field-label ng-tns-c7-2 mat-empty mat-form-field-empty ng-star-inserted" id="mat-form-field-label-3" for="mat-input-0" aria-owns="mat-input-0"><!----><!---->Título<!----><!----></label></span>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Nombres</label>
+                                        <input type="text" class="form-control" matInput (keyup)="applyFilter($event)">
                                     </div>
-                                    <!---->
                                 </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Apellidos</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Identificación (C.C)</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Rol asociado</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <button type="button" class="btn btn-success">Filtrar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Limpiar</button>
+
                     </div>
                 </div>
             </div>

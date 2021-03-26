@@ -41,12 +41,24 @@ export class RolesComponent implements AfterViewInit   {
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
+  
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+
+
+    console.log('trae datasource PREDICATE=>', this.dataSource.filterPredicate);
+    console.log('trae datasource =>', this.dataSource.filter);
   }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+
+    // this.dataSource.filterPredicate = function(data, filter: string): boolean {
+    //   return (
+    //     data.lastname.toString().includes(filter) ||
+    //     data.id.toString().includes(filter) 
+    //   );
+    // };
   }
 
 }
