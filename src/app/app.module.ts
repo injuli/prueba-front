@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import {MatTableModule} from '@angular/material/table';
 
 import { MatSliderModule } from '@angular/material/slider';
-import {MatFormFieldModule} from '@angular/material/form-field';
+
 import { MatInputModule } from '@angular/material/input';
 
 
@@ -57,6 +57,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -66,7 +67,6 @@ import {OverlayModule} from '@angular/cdk/overlay';
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
-    MatFormFieldModule,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,

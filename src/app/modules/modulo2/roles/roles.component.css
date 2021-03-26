@@ -2,25 +2,28 @@ table {
     width: 100%;
 }
 
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.card .card-header-primary .card-icon,
+.card .card-header-primary .card-text,
+.card .card-header-primary:not(.card-header-icon):not(.card-header-text),
+.card.bg-primary,
+.card.card-rotate.bg-primary .front,
+.card.card-rotate.bg-primary .back {
+    background: linear-gradient( 60deg, #4966a8, #4966a8);
+}
+
 :host {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.mat-form-field-flex {
-    display: inline-flex;
-    align-items: baseline;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.example-container .mat-form-field+.mat-form-field {
-    margin-left: 8px;
-}
-
 .login {
-    margin-top: 75px;
+    margin-top: 30px;
 }
 
 .wrapper {
@@ -38,11 +41,6 @@ table {
     border: 1px solid rgba(185, 20, 20, 0.1);
     background: transparent;
     transition: none;
-}
-
-.mat-form-field,
-.form-group {
-    width: 100%;
 }
 
 .editar :hover {

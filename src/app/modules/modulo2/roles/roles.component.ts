@@ -41,7 +41,10 @@ export class RolesComponent implements AfterViewInit   {
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
