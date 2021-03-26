@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 
 import {MatTableModule} from '@angular/material/table';
 
+import { MatSliderModule } from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -31,7 +35,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
@@ -41,7 +45,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatSliderModule} from '@angular/material/slider';
+
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSortModule} from '@angular/material/sort';
@@ -62,6 +66,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
+    MatFormFieldModule,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,

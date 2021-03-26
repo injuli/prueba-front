@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { Modulo2RoutingModule } from './modulo2-routing.module';
 
+// modulos
+import { LayoutsModule } from 'src/app/shared/layouts/layouts.module';
+import { DashComponent } from './dash/dash.component';
+import { RolesComponent } from './roles/roles.component';
+
+// material
 
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -30,8 +36,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
@@ -41,17 +48,12 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSortModule} from '@angular/material/sort';
-
+import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
-import { LayoutsModule } from 'src/app/shared/layouts/layouts.module';
-import { DashComponent } from './dash/dash.component';
-import { RolesComponent } from './roles/roles.component';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-
 
 
 @NgModule({
@@ -69,6 +71,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
     CdkTableModule,
     CdkTreeModule,
     DragDropModule,
+    MatFormFieldModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -107,6 +110,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
     OverlayModule,
     PortalModule,
     ScrollingModule,
+
   ]
 })
 export class Modulo2Module { }
